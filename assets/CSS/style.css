@@ -134,11 +134,12 @@ a {
 /* Fim do reset */
 
 
-main {
+main,body {
   background-color: rgb(1, 171, 171);
 }
 
 form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,5 +230,5 @@ button {
   background-color: rgb(1, 171, 171);
 
   margin: 30px;
-  
+
 }
