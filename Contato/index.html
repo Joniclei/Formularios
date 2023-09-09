@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Aqui é estilo das paginas-->
-    <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/CSS/style.css" />
 
-    <title>Document</title>
+    <title>Contato</title>
   </head>
   <body>
     <header></header>
@@ -63,7 +63,6 @@
             maxlength="10"
             pattern="^\([1-9]{2}\)[0-9]{4}\-[0-9]{4}$"
             autocomplete="off"
-
           />
 
           <label for="idMotivo" class="espacoForms">Motivo do contato:</label>
@@ -81,11 +80,16 @@
             <option value="reclamacao">Reclamacao</option>
             <option value="sugestao">Sugestao</option>
             <option value="outro">Outro</option>
-
           </select>
 
           <label for="idMsg" class="espacoForms">Mensagem:</label>
-          <textarea name="nmMsg" id="idMsg" cols="30" rows="10"required></textarea>
+          <textarea
+            name="nmMsg"
+            id="idMsg"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
 
           <button type="submit">Enviar</button>
         </fieldset>
