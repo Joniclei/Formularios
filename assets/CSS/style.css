@@ -186,7 +186,7 @@ legend {
 }
 
 label {
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 input {
   margin: 0 auto;
@@ -194,7 +194,7 @@ input {
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 40px;
+  height: 30px;
   font-size: 100%;
   background-color: rgb(203, 232, 227);
   border-radius: 10px;
@@ -221,14 +221,27 @@ button {
   font-size: 1rem;
 }
 
-#idButtonCandidato{
+.divButtonForm{
   display: flex;
   text-align: center;
 }
 
-.butCandidato {
+.buttonForm{
   background-color: rgb(1, 171, 171);
 
-  margin: 30px;
+  margin: 0 30px 0 0;
 
+}
+
+.divSel {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.flagSel{
+  background-color: aqua;
+  margin: 0px 3px 5px 0px;
+  padding: 0;
+  height: 30px;
+  width: 30px;
 }

@@ -9,10 +9,10 @@
   <body>
     <header></header>
     <main>
+      <h1>Cadastro de Aluno</h1>
       <form action="">
         <fieldset>
-          <label for="idNome" class="espacoForms">Nome:
-          </label>
+          <label for="idNome" class="espacoForms">Nome: </label>
           <input
             type="text"
             id="idNome"
@@ -40,10 +40,7 @@
 
           <label for="idDatas">Data de Nascimento</label>
 
-          <input type="date"
-          min="2000-01-01"
-          max="2017-12-31"
-          id="idDatas">
+          <input type="date" min="2000-01-01" max="2017-12-31" id="idDatas" />
 
           <label for="idEndereco" class="espacoForms">Enderedo:</label>
           <input
@@ -104,31 +101,74 @@
             autocomplete="off"
           />
 
-          <label for="idTel" class="espacoForms">Tel:</label>
-          <input
-            type="tel"
-            id="idTel"
-            name="nmTel"
-            value=""
-            placeholder="*****-****"
-            minlength="8"
-            maxlength="10"
-            pattern="^\([1-9]{2}\)[0-9]{4}\-[0-9]{4}$"
-            autocomplete="off"
-          />
+          <br>
+
           <label for="idSerie">Serie:</label>
-          <input type="number" name="nmSerie" id="idSerie"
-          min="1"
-          max="9">
+          <input type="number" name="nmSerie" id="idSerie" min="1" max="9" />
+
+          <br>
+
           <label for="idSexo">Sexo:</label>
 
-          <label for="idFemenino">Femenino</label>
-          <input type="radio" name="nmGenero" id="idFemenino">
 
-          <label for="idMasculino">Masculino</label>
-          <input type="radio" name="nmGenero" id="idMasculino">
 
-          <button type="submit">Enviar</button>
+          <div class="divSel">
+            <input
+              type="radio"
+              name="nmGenero"
+              id="idFemenino"
+              class="flagSel"
+            />
+
+            <label for="idFemenino">Femenino</label>
+          </div>
+
+          <div class="divSel">
+            <input
+              type="radio"
+              name="nmGenero"
+              id="idMasculino"
+              class="flagSel"
+            />
+            <label for="idMasculino">Masculino</label>
+          </div>
+
+          <br>
+
+
+          <label>Necessidade Especiais:</label>
+          <br>
+
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idAuditiva">Deficiencia Auditiva</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idMotora">Deficiencia Motora</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idVisual">Deficiencia Visual</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idCerebral">Paralesia Cerebral</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idAutista">Pertubacao do Espectro Autista</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idPsicologico">Pertubacao do Foro Psicologico</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idAprendizagem">Pertubacao de Aprendizagem</label>
+          </div>
+          <div class="divSel">
+            <input type="checkbox" class="flagSel" /><label for="idHabilidade">Altas Habilidades</label>
+          </div>
+
+          <!--Aqui eu tive duvida do type que eu uso,eu usei o button por pesquisar e acreditar que é semantico na sua forma-->
+          <div id="idButtonCadastroAluno" class="divButtonForm">
+            <button type="button" value="salvaCadAluno" class="buttonForm">Salvar</button>
+            <button type="reset" value="resetCadAluno" class="buttonForm">Limpar</button>
+          </div>
         </fieldset>
       </form>
     </main>
